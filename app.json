@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Escape7",
+    "slug": "Escape7",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./Helpers/logoEscape.png",
+    "splash": {
+      "image": "./Helpers/logoEscape.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.escape7.EscapeApp"
+    },
+    "android": {
+      "package": "com.escape7.EscapeApp"
+    }
+  }
+}
