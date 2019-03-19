@@ -3,10 +3,10 @@ import SearchScreen from './SearchScreen'
 import SalleScreen from './SalleScreen'
 
 export default createStackNavigator({
-    Search : SearchScreen,
-    Salle : SalleScreen
+    SearchScreen,
+    SalleScreen
 },
     {
-        initialRouteName: "Search"
+        initialRouteName: "SearchScreen"
     }
 );

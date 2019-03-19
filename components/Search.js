@@ -4,6 +4,7 @@ import React from 'react'
 import {ActivityIndicator, FlatList, StyleSheet, TouchableOpacity, View} from 'react-native'
 import SalleItem from "./SalleItem";
 import SalleData from '../Helpers/SalleData'
+import SearchIndex from './../screens/Search'
 
 class Search extends React.Component {
     constructor(props) {
@@ -19,19 +20,11 @@ class Search extends React.Component {
                     keyExtractor={(item) => item.id.toString()}
                     renderItem={
                         ({item}) =>
-                            <TouchableOpacity style={{flex: 1}} onPress={() => {
-                                console.log("Lol")
-                                this.props.nav.navigate('SalleScreen');
-                            }}>
+                            <TouchableOpacity style={{flex: 1}} onPress={() => this.navigate('SalleScreen')}>
                                 <SalleItem salle={item}/>
                             </TouchableOpacity>
                     }
-                    onEndReachedThreshold={0.5}
-                    onEndReached={() => {
-                        console.log("onEndReached")
-                    }}
                 />
-                {this._displayLoading()}
             </View>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View, FlatList, TouchableOpacity} from 'react-native';
 import Search from './../../components/Search'
 
 export default class SearchScreen extends React.Component {
@@ -8,15 +8,9 @@ export default class SearchScreen extends React.Component {
     };
 
     render() {
-        return (
-            <Search nav = {this.props.navigation} />
-        );
+        const {navigate} = this.props.navigation;
+        return(
+            <Search navigate={navigate}/>
+        )
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-});
