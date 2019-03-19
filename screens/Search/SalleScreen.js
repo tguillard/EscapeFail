@@ -1,16 +1,16 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import Search from './../../components/Search'
+import SalleDetail from './../../components/SalleDetail'
 
 export default class SearchScreen extends React.Component {
     static navigationOptions = {
-        title: 'Salles',
+        title: 'Salle',
     };
 
     render() {
         return (
-            <Search nav = {this.props.navigation} />
-        );
+            <SalleDetail/>
+    );
     }
 }
 

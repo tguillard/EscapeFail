@@ -21,6 +21,7 @@ class Search extends React.Component {
                         ({item}) =>
                             <TouchableOpacity style={{flex: 1}} onPress={() => {
                                 console.log("Lol")
+                                this.props.nav.navigate('SalleScreen');
                             }}>
                                 <SalleItem salle={item}/>
                             </TouchableOpacity>
