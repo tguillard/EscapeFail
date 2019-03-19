@@ -14,5 +14,6 @@ export default createAppContainer(createBottomTabNavigator({
     },
     Settings: {
         screen: SettingsIndex,
+        
     },
 }));
